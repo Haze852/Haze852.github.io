@@ -1,0 +1,176 @@
+<!--
+navgation bar hover 字會變色
+同時也會適應瀏覽器寬度
+過窄會自動調整成按鈕選單
+引用了幾款外部web font
+button hover有animation
+圖片大小會根據寬度自動調整大小
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShawnNG - 3D Generalist</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home"  id="navbar__logo">ShawnNG</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">| Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">| About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#skills" class="navbar__links" id="skills-page">| Skills</a>
+                </li>
+                <li>
+                    <li class="navbar__item">
+                        <a href="#gallery" class="navbar__links" id="gallery-page">| Gallery</a>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--Popup-->
+
+
+<!--GoToTop-->
+<div class="GoToTop"><a href="#home">↑</a></div>
+
+    <!--BG Video-->
+    <div class="overlay">  </div>
+        <video autoplay muted loop id="bgVideo">
+            <source src="video/bg.mp4" type="video/mp4">
+        </video>
+  
+    <!--Hero Section-->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Welcome to my <span>PORTFOLIO</span></h1>
+            <p class="hero__description">I am a 3D Generalist form Hong Kong.</p>
+            <button class="main__btn" ><a href="#gallery">Gallery</a></button>
+            <p class="hero__heading">︾</p>
+        </div>
+    </div>
+
+    <!--about Section-->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card">
+                <i class="fas fa-question-circle"></i>
+                </div>
+            </div>
+                     <div class="main__content">
+                        <h1>About</h1>
+                        <p>I am Shawn Ng, a 3D Generalist from Hong Kong, currently live in Taiwan.</p>
+                        <p></p><br>
+                        <h2>Work Experience</h2>
+                        <p>2019 - 2021 Taproot Studio</p>
+                        <p></p>
+                        <h2>參與專案</h2>
+                        <li>電影《逃獄兄弟》片頭設計</li>
+                        <li>電視節目《大自然大不同》節目包裝</li>
+                        <li>動畫系列《Fullhouse Funmily滿紛一家》</li>
+                        <li>電影《見怪》</li>
+                        <button class="main__btn" onclick="toggle()"><a>Contact info.</a></button>
+                        <div id="showHideText">
+                            <p>
+                                <h2>Phone:<br></h2>
+                                <li>+886 123456789<br></li>
+                                <h2>Email:<br></h2>
+                                <li>ngsywork@gmail.com</p><li>
+                            </p>
+                        </div>
+
+                    </div>
+                                    
+        </div>
+    </div>
+
+<div id="banner1">
+
+</div>
+
+<!--skills Section-->
+<div class="main" id="skills">
+    <div class="main__container">
+        <div class="main__img--container">
+            <div class="main__img--card">
+                <i style="font-size: 15rem;"class="fas fa-wrench"></i>
+            </div>
+        </div>
+        <div class="main__content">
+            <h1>SkillSet</h1>
+            <h2>Skills</h2>
+                <li>3D modeling</li>
+               <li>3D Animation</li>
+                <li>UV Mapping</li>
+                <li>Texture Painting</li>
+                <li>Lighting</li>
+                <li>Rendering</li>
+                <li>Compositing</li>
+                <li>Illustration</li>
+                <li>Digital Sculpting</li><br>
+            <h2>Software proficiency</h2>
+                <li>Maya</li>
+                <li>Substance Painter</li>
+                <li>Arnold</li>
+                <li>Zbrush</li>
+                <li>Unity</li>
+                <li>Photoshop</li>
+                <li>After Effects</li>
+                <li>Premiere</li>
+                </div>
+            
+    </div>
+</div>
+<!--Gallery-->
+<div class="main" id="gallery">
+    <div class="main__container2">
+        <div class="main__content"><h1>Gallery</h1></div>
+        <div class=row>
+            <div class="column">
+                <img src="img/01.jpeg" style="width:100%" alt="">
+                <img src="img/02.jpeg" style="width:100%" alt="">
+                <img src="img/03.jpg" style="width:100%" alt="">
+                <img src="img/RTHK_poster_chi.jpg" style="width:100%" alt="">
+            </div>
+            <div class="column">
+                <img src="img/04.png" style="width:100%" alt="">
+                <img src="img/orangeObj_front.jpg" style="width:100%" alt="">
+                <img src="img/meter.png" style="width:100%" alt="">
+                <img src="img/katana.png" style="width:100%" alt="">
+            </div>
+        </div>
+        <button class="main__btn"><a href="#home">Back To Top</a></button>
+    </div>
+</div>
+<footer class="footer">
+    <div class="column"><a href="#home"><h1>|Home</h1></a></div>
+    <div class="column"><a href="#about"><h1>|About</h1></a></div>
+    <div class="column"><a href="#skills"><h1>|Skills</h1></a></div>
+    <div class="column"><a href="#gallery"><h1>|Gallery</h1></a></div>
+    <div class="column"><h1>|Contect</h1>
+    <div class="row"><h2>Phone: </h2><p> +886 123456789</p></div>
+    <div class="row"><h2>Email: </h2><p><a href="mailto:ngsywork@gmail.com">  ngsywork@gmail.com</a></p></div>
+    </div>
+    
+</footer>
+    <script src="app.js"></script>
+</body>
+</html>
