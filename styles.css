@@ -116,8 +116,9 @@ li {
 }
 
 #showHideText{
-    width: 400px;
-    height: 180px;
+    width: auto;
+    height: auto;
+    width:100%;
     color: #b3ff00;
     background-color: #1a191b;
     padding: 15px;
@@ -306,13 +307,13 @@ li {
 .main__container{
     background-color: #000000;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr 1fr ;
     align-items: left;
     justify-content: center;
     margin:-10px auto;
     height: 100%;
     z-index:1;
-    width:100%;
+    width:auto;
     max-width: 1080px;
     padding:80px 50px;
 }
@@ -333,7 +334,7 @@ li {
 
 .main__content{
     color:#FFF;
-    width:100%;
+    width:inherit;
 }
 
 .main__content h1{
@@ -408,17 +409,19 @@ li {
 .main__img--container{
 text-align: center;
 vertical-align: middle;
+width: 100%;
 }
 .main__img--card{
     top: 50%;
     left:50%;
     margin: 10px;
     padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
     height: 500px;
-    width: 500px;
+    width: 90%;
     border-radius: 4px;
-    display: flex;
-    flex-direction: column;
+     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: #fff;
