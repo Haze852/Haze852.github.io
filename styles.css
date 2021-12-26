@@ -413,6 +413,7 @@ vertical-align: middle;
     top: 50%;
     left:50%;
     margin: 10px;
+    padding-left: 50px;
     height: 500px;
     width: 500px;
     border-radius: 4px;
@@ -421,13 +422,8 @@ vertical-align: middle;
     justify-content: center;
     text-align: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: linear-gradient(to right, #34de00 0%, #eeff00 100%);
   }
-
-.fas-fa-question-circle{
-    vertical-align: middle;
-}
-
 
 .row {
     display: flex;
